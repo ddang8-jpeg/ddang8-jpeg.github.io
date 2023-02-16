@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+	font-size: 15pt;
+}
+
+.navbar-brand {
+	font-size: 25pt;
+}
+
+.jumbotron {
+	background-image: url(/assets/imgs/landing-page/cropped-bee.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.carousel {
+	margin: auto;
+	position: center;
+	width: 80%;
+}
+
+.carousel-item img {
+	object-fit: cover;
+	margin: auto;
+	width: auto;
+	height: 550px;
+}
+
+.profile-img {
+	position: center;
+	object-fit: cover;
+	overflow: hidden;
+	width: 250px;
+	height: auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	line-height: 2
+}
