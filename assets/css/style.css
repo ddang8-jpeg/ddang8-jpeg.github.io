@@ -32,11 +32,18 @@ body {
 	height: 550px;
 }
 
-.profile-img {
+.members-img {
 	position: center;
 	object-fit: cover;
 	overflow: hidden;
 	width: 250px;
+	height: auto;
+}
+
+.profile-img {
+	position: center;
+	object-fit: cover;
+	width: 500px;
 	height: auto;
 }
 
