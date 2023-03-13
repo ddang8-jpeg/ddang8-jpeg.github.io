@@ -61,48 +61,75 @@
 
 
 	<div class="container my-5">
-		<div class="row gx-3">
-			<div class="col-6">
-				<div class="card mb-3">
-					<div class="row g-0">
-						<div class="col-md-4">
-							<img src="/assets/imgs/research/Fig1-ProtoObjectSaliency.png" class="img-fluid rounded-start" alt="...">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-									content.
-									This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-6">
-				<div class="card mb-3">
-					<div class="row g-0">
-						<div class="col-md-4">
-							<img src="/assets/imgs/research/Fig1-ProtoObjectSaliency.png" class="img-fluid rounded-start" alt="...">
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-									content.
-									This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="research-grid row gx-3">
+
 		</div>
 	</div>
 
 
+	<script>
+		// Retrieve the JSON data
+		fetch('./researchCards.json')
+			.then(response => {
+				console.log("response: ", response)
+				return response.json();
+			})
+			.then(data => {
+				console.log("data: ", data);
+				data.research.forEach(item => {
+					const container = document.querySelector('.research-grid');
 
+					const col1 = document.createElement('div');
+					col1.setAttribute("class", "col-6 mb-3");
+
+					const card = document.createElement('div');
+					card.setAttribute("class", "card mb-3 h-100");
+
+					const row = document.createElement('div');
+					row.setAttribute("class", "row g-0");
+
+					const col2 = document.createElement('div');
+					col2.setAttribute("class", "col-md-4");
+
+					const img = document.createElement('img');
+					img.setAttribute("src", item.img);
+					img.setAttribute("class", "img-fluid rounded-start");
+
+					const col3 = document.createElement('div');
+					col3.setAttribute("class", "col-md-8");
+
+					const cardBody = document.createElement('div');
+					cardBody.setAttribute("class", "card-body");
+
+					const cardTitle = document.createElement('h5');
+					cardTitle.setAttribute("class", "card-title");
+
+					const cardText = document.createElement('p');
+					cardText.setAttribute("class", "card-text");
+
+					const link = document.createElement('a');
+					link.setAttribute("href", item.doi);
+					link.setAttribute("class", "stretched-link");
+
+
+					cardTitle.innerHTML = item.title;
+					cardText.innerHTML = item.body;
+
+
+					cardBody.appendChild(cardTitle);
+					cardBody.appendChild(cardText);
+					col3.appendChild(cardBody);
+					col2.appendChild(img);
+					row.appendChild(col2);
+					row.appendChild(col3);
+					card.appendChild(row);
+					col1.appendChild(card);
+					container.appendChild(col1);
+				});
+			});
+
+
+	</script>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
