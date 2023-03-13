@@ -1,18 +1,87 @@
 {
 	"research": [
 		{
-			"title": "Card title",
-			"body": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+			"title": "Proto-Object Visual Saliency Modeling",
+			"body": "The nervous system can rapidly select important information from a visual scene and pay attention to it. Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate a saliency map that predicts human fixations.",
 			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
 		},
 		{
-			"title": "Card title",
-			"body": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+			"title": "Hippocampal SLAM and Navigation",
+			"body": "Creating biologically-plausible Simultaneous Localization And Mapping (SLAM) and navigation algorithms based on rodent hippocampus and entorhinal cortex.",
+			"img": "/assets/imgs/research/complex-vco.png"
+		},
+		{
+			"title": "Microbead Electrode",
+			"body": "A micro-scale implantable bead that is small enough (<100 µm in diameter) so that multiple devices, potentially swarms of them, can be “injected” into the brain at different locations for neural recording and stimulation.",
+			"img": "/assets/imgs/research/microbead-needle.png"
+		},
+		{
+			"title": "Neuromorphic Spike-Based Visual Saliency",
+			"body": "",
+			"img": "/assets/imgs/research/spike-viz-saliency.png"
+		},
+		{
+			"title": "Wearable Sensors for Motor Activity in Neurological Patients",
+			"body": "",
+			"img": "/assets/imgs/research/wearable-sensors.png"
+		},
+		{
+			"title": "Integrate-and-Fire Array Transceiver",
+			"body": "A micro-scale implantable bead that is small enough (<100 µm in diameter) so that multiple devices, potentially swarms of them, can be “injected” into the brain at different locations for neural recording and stimulation.",
+			"img": "/assets/imgs/research/mn-ifat.png"
+		},
+		{
+			"title": "Active Ultrasound Pattern Injection System",
+			"body": "An ultrasound tool tracking system with active echo elements, mid-plane detection, time/frequency modulation and arbitrary pattern injection functions.",
+			"img": "/assets/imgs/research/auspis-3.jpg"
+		},
+		{
+			"title": "Neuro-Modulated Diabetes Control (NeuMeDiC)",
+			"body": "Investigating new bioelectronic approaches to pancreatic stimulation for diabetes control."
+		},
+		{
+			"title": "Spatio-temporal Compressive sensing Active Pixel Sensor (SCAPS)",
+			"body": "Implementing temporal compressed sensing with pixel-wise coded exposure in an all-CMOS chip for high-framerate, low-power imaging.",
+			"img": "/assets/imgs/research/scaps-penny.jpg"
+		},
+		{
+			"title": "Closed-loop Compressed Sensing System for Neural Recording",
+			"body": "Using compressed-sensing techniques to condense entire neural signal waveforms with efficient on-chip circuits.",
+			"img": "/assets/imgs/research/cs-neural-block.jpg"
+		},
+		{
+			"title": "Wireless Biotelemetry Using Ultra-wideband Communications",
+			"body": "",
+			"img": "/assets/imgs/research/biotelemetry/"
+		},
+		{
+			"title": "Bidirectional Neuroprostheses",
+			"body": "",
 			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
 		},
 		{
-			"title": "Card title",
-			"body": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+			"title": "Wireless Biotelemetry Using Ultra-wideband Communications",
+			"body": "",
+			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+		},
+		{
+			"title": "Versatile Bio-Processing Integrated Microsystem",
+			"body": "",
+			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+		},
+		{
+			"title": "Color Glove for the Blind",
+			"body": "",
+			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+		},
+		{
+			"title": "Neural Cross Correlation Engine",
+			"body": "",
+			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+		},
+		{
+			"title": "Single Chip Stereo Imager",
+			"body": "",
 			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
 		}
 	]
