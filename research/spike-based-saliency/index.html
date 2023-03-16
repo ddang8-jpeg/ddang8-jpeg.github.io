@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link href="/assets/css/style.css" type="text/css" rel="stylesheet">
+	<title>CSMS</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient border-bottom">
+				<div class="container"> <a class="navbar-brand" href="/index.html">CSMS Lab</a> <button class="navbar-toggler"
+						type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
+							class="navbar-toggler-icon"></span> </button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item"> <a class="nav-link active" href="/research/index.html">Research</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/papers/index.html">Papers</a> </li>
+							<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false"> Team </a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="/team/current/ralph-etienne-cummings/index.html">Ralph
+											Etinne-Cummings</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="/team/current/index.html">Current Team Members</a></li>
+									<li><a class="dropdown-item" href="/team/past/index.html">Past Team Members</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"> <a class="nav-link" href="/teaching/index.html">Teaching</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/blog/index.html">Blog</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/code/index.html">Code</a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-fluid mt-5">
+			<div class="row">
+				<div class="col-12">
+					<h1>Proto-Object Modeling</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-3">
+			<div class="row">
+				<div class="col-md-4 p-3">
+					<h3>Team member(s)</h3>
+					<ul>
+						<li><a href="/team/current/khaled-aboumerhi/index.html">Khaled Aboumerhi</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8 p-3">
+					<p>Neuromorphic Vision Sensors have recently garnered a lot of interest due to their low-power, highly
+						efficient methods of capturing information without the redundancy and high power methods of typical cameras.
+						Inspired by the mammalian retinal architecture, NVS cameras capture information only when a significant
+						change in intensity cross a pixel threshold. The cameras send this data in the format of AER streams:
+						address-event representation, where the format is as follows: [x-pixel, y-pixel, polarity of intensity
+						change, time-stamp]</p>
+					<p> Using these silicon retina (DVS, ATIS, DAVIS), we can perhaps shed some light on visual saliency: features
+						that grab attention, or, what feature stands out in a field of vision. Imagine yourself sitting at a bus
+						stop reading a newspaper when a car accident happens. Would you continue to read your paper, or would you
+						observe the accident? These are the sort of questions we would like to answer based on spike-based computing
+					</p>
+					<p>Using incoming AER instances, we first built a saliancy algorithm that implements hand-crafted filters to
+						track objects of desire. Then, using an online spatiotemporal learning method, we improved the algorithm to
+						learn time-surfaces by convolving instances with different time kernels, and compare these time-surfaces
+						with incoming data. Our current task is acquiring a saliency ground-truth data-set using the HTC Vive Pro
+						Eye to compare the validity of our saliency algorithms.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

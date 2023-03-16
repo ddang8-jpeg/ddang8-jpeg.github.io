@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link href="/assets/css/style.css" type="text/css" rel="stylesheet">
+	<title>CSMS</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient border-bottom">
+				<div class="container"> <a class="navbar-brand" href="/index.html">CSMS Lab</a> <button class="navbar-toggler"
+						type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
+							class="navbar-toggler-icon"></span> </button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item"> <a class="nav-link active" href="/research/index.html">Research</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/papers/index.html">Papers</a> </li>
+							<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false"> Team </a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="/team/current/ralph-etienne-cummings/index.html">Ralph
+											Etinne-Cummings</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item" href="/team/current/index.html">Current Team Members</a></li>
+									<li><a class="dropdown-item" href="/team/past/index.html">Past Team Members</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"> <a class="nav-link" href="/teaching/index.html">Teaching</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/blog/index.html">Blog</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="/code/index.html">Code</a> </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-fluid mt-5">
+			<div class="row">
+				<div class="col-12">
+					<h1>Proto-Object Modeling</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mt-3">
+			<div class="row">
+				<div class="col-md-4 p-3">
+					<h3>Team member(s)</h3>
+					<ul>
+						<li>Uejima Takeshi</li>
+						<li>Elena Mancinelli</li>
+					</ul>
+					<h3>Publications</h3>
+					<ul>
+						<li><a href="">Proto-Object Based Saliency Model with Second-Order Texture Feature</a></li>
+						<li><a href=""></a>Computational stereo-vision model of proto-object based saliency in three-dimensional
+							space</li>
+						<li><a href=""></a>Neuromorphic visual saliency implementation using stochastic computation</li>
+						<li><a href=""></a>Live demonstration: Real-time implementation of a proto-object-based</li>
+						<li><a href=""></a>How is motion integrated into a proto-object based visual saliency model?</li>
+						<li><a href=""></a>Proto-object based visual saliency model with a motion-sensitive channel</li>
+						<li><a href=""></a>A model of proto-object based saliency</li>
+				</div>
+				<div class="col-md-8 p-3">
+					<p>Saliency is a tendency that humans tend to gaze at interesting points. Understanding and predicting
+						saliency is an important topic in neuroscience and computer vision. Our goal is to implement a more accurate
+						and bioplausible model of saliency on computers. </p>
+					<div class="text-center">
+						<img class="img-fluid" src="/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+							alt="Proto-Object Saliency Model">
+					</div>
+					<p>Our model which is called as a proto-object based saliency model, is bottom-up fashion and mimics visual
+						cortex V1 and V2 behaviors. The significant property of the model is that it can indicate high saliency at
+						“grouped features” based on Gestalt principles (Fig.1). This is achieved by the model of border-ownership
+						cells which have been found in monkey visual cortex V2 and hypothetical grouping cells which integrate the
+						global contour information of figures into tentative proto-objects (Fig.2).</p>
+					<div class="text-center">
+						<img class="img-fluid" src="/assets/imgs/research/Fig2-ProtoObjectModel.png"
+							alt="Proto-Object Saliency Model">
+					</div>
+					<p>Though the basic model employs simple features such as intensity, color, and orientation, it can be
+						extended by adding other features used by biological visual process. Recent advances in the lab have added
+						motion, depth information, and simple texture to the model.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

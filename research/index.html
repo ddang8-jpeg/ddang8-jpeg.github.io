@@ -59,80 +59,93 @@
 		</div>
 	</div>
 
-
 	<div class="container my-5">
-		<div class="research-grid row gx-3">
-
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">Research</h1>
+			</div>
 		</div>
-	</div>
+
+		<div class="container my-3">
+			<div class="research-grid row gx-3">
+
+			</div>
+		</div>
 
 
-	<script>
-		// Retrieve the JSON data
-		fetch('./researchCards.json')
-			.then(response => {
-				console.log("response: ", response)
-				return response.json();
-			})
-			.then(data => {
-				console.log("data: ", data);
-				data.research.forEach(item => {
-					const container = document.querySelector('.research-grid');
+		<script>
+			// Retrieve the JSON data
+			fetch('./researchCards.json')
+				.then(response => {
+					console.log("response: ", response)
+					return response.json();
+				})
+				.then(data => {
+					console.log("data: ", data);
+					data.research.forEach(item => {
+						const container = document.querySelector('.research-grid');
 
-					const col1 = document.createElement('div');
-					col1.setAttribute("class", "col-lg-6 mb-3");
+						const col1 = document.createElement('div');
+						col1.setAttribute("class", "col-lg-6 mb-3");
 
-					const card = document.createElement('div');
-					card.setAttribute("class", "card p-3 h-100");
+						const card = document.createElement('div');
+						card.setAttribute("class", "card p-3 h-100");
 
-					const row = document.createElement('div');
-					row.setAttribute("class", "row g-0");
+						const row = document.createElement('div');
+						row.setAttribute("class", "row g-0");
 
-					const col2 = document.createElement('div');
-					col2.setAttribute("class", "col-md-4");
+						const col2 = document.createElement('div');
+						col2.setAttribute("class", "col-md-4");
 
-					const img = document.createElement('img');
-					img.setAttribute("src", item.img);
-					img.setAttribute("class", "img-fluid rounded-start");
+						const img = document.createElement('img');
+						img.setAttribute("src", item.img);
+						img.setAttribute("class", "img-fluid rounded-start");
 
-					const col3 = document.createElement('div');
-					col3.setAttribute("class", "col-md-8");
+						const col3 = document.createElement('div');
+						col3.setAttribute("class", "col-12");
 
-					const cardBody = document.createElement('div');
-					cardBody.setAttribute("class", "card-body");
+						const cardBody = document.createElement('div');
+						cardBody.setAttribute("class", "card-body");
 
-					const cardTitle = document.createElement('h5');
-					cardTitle.setAttribute("class", "card-title");
+						const cardTitle = document.createElement('h4');
+						cardTitle.setAttribute("class", "card-title");
 
-					const cardText = document.createElement('p');
-					cardText.setAttribute("class", "card-text");
+						const cardText = document.createElement('p');
+						cardText.setAttribute("class", "card-text");
 
-					const link = document.createElement('a');
-					link.setAttribute("href", item.doi);
-					link.setAttribute("class", "stretched-link");
-
-
-					cardTitle.innerHTML = item.title;
-					cardText.innerHTML = item.body;
+						const link = document.createElement('a');
+						link.setAttribute("href", item.link);
+						link.setAttribute("class", "stretched-link");
 
 
-					cardBody.appendChild(cardTitle);
-					cardBody.appendChild(cardText);
-					col3.appendChild(cardBody);
-					col2.appendChild(img);
-					row.appendChild(col2);
-					row.appendChild(col3);
-					card.appendChild(row);
-					col1.appendChild(card);
-					container.appendChild(col1);
+						cardTitle.innerHTML = item.title;
+						cardText.innerHTML = item.body;
+
+						if (item.img) {
+							col2.appendChild(img);
+							col3.setAttribute("class", "col-md-8");
+						}
+
+						if (item.link) {
+							cardBody.appendChild(link);
+						}
+
+						cardBody.appendChild(cardTitle);
+						cardBody.appendChild(cardText);
+						col3.appendChild(cardBody);
+						row.appendChild(col2);
+						row.appendChild(col3);
+						card.appendChild(row);
+						col1.appendChild(card);
+						container.appendChild(col1);
+					});
 				});
-			});
 
 
-	</script>
+		</script>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,8 @@
 		{
 			"title": "Proto-Object Visual Saliency Modeling",
 			"body": "The nervous system can rapidly select important information from a visual scene and pay attention to it. Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate a saliency map that predicts human fixations.",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png",
+			"link": "/research/proto-object-modeling/index.html"
 		},
 		{
 			"title": "Hippocampal SLAM and Navigation",
@@ -13,12 +14,14 @@
 		{
 			"title": "Microbead Electrode",
 			"body": "A micro-scale implantable bead that is small enough (<100 µm in diameter) so that multiple devices, potentially swarms of them, can be “injected” into the brain at different locations for neural recording and stimulation.",
-			"img": "/assets/imgs/research/microbead-needle.png"
+			"img": "/assets/imgs/research/microbead-needle.png",
+			"link": "/research/microbead-electrode/index.html"
 		},
 		{
 			"title": "Neuromorphic Spike-Based Visual Saliency",
 			"body": "",
-			"img": "/assets/imgs/research/spike-viz-saliency.png"
+			"img": "/assets/imgs/research/spike-viz-saliency.png",
+			"link": "/research/spike-based-saliency/index.html"
 		},
 		{
 			"title": "Wearable Sensors for Motor Activity in Neurological Patients",
@@ -28,7 +31,8 @@
 		{
 			"title": "Integrate-and-Fire Array Transceiver",
 			"body": "A micro-scale implantable bead that is small enough (<100 µm in diameter) so that multiple devices, potentially swarms of them, can be “injected” into the brain at different locations for neural recording and stimulation.",
-			"img": "/assets/imgs/research/mn-ifat.png"
+			"img": "/assets/imgs/research/mn-ifat.png",
+			"link": "/research/integrate-and-fire-array-transceiver/index.html"
 		},
 		{
 			"title": "Active Ultrasound Pattern Injection System",
@@ -51,38 +55,29 @@
 		},
 		{
 			"title": "Wireless Biotelemetry Using Ultra-wideband Communications",
-			"body": "",
-			"img": "/assets/imgs/research/biotelemetry/"
+			"body": ""
 		},
 		{
 			"title": "Bidirectional Neuroprostheses",
-			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
-		},
-		{
-			"title": "Wireless Biotelemetry Using Ultra-wideband Communications",
-			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"body": ""
 		},
 		{
 			"title": "Versatile Bio-Processing Integrated Microsystem",
-			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"body": ""
 		},
 		{
 			"title": "Color Glove for the Blind",
-			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"body": ""
 		},
 		{
 			"title": "Neural Cross Correlation Engine",
 			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"img": "/assets/imgs/research/nxcorr-architecture.png"
 		},
 		{
 			"title": "Single Chip Stereo Imager",
 			"body": "",
-			"img": "/assets/imgs/research/Fig1-ProtoObjectSaliency.png"
+			"img": "/assets/imgs/research/ssi-micrograph.jpg"
 		}
 	]
 }
