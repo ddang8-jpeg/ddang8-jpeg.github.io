@@ -51,6 +51,16 @@ const StyledPostContent = styled.div`
 `;
 
 const PostTemplate = ({ data, location }) => {
+  const markdownRemark = data?.markdownRemark;
+  if (!markdownRemark) {
+    console.error(`MarkdownRemark is null for ${location.pathname}`);
+    return (
+      <Layout location={location}>
+        <div>Page not found</div>
+      </Layout>
+    );
+  }
+
   const { frontmatter, html } = data.markdownRemark;
   const { title, date, tags } = frontmatter;
 
