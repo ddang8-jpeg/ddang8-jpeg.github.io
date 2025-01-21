@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ddang8-jpeg.github.io/sitemap-index.xml
+Host: https://ddang8-jpeg.github.io
